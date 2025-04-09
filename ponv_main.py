@@ -13,16 +13,7 @@ from sklearn.datasets import make_classification
 
 st.set_page_config(layout="wide")
 
-# Load the logo image
-try:
-    logo = Image.open("mkcg_logo.png")  # Corrected filename
-    # Create columns to place the logo beside the title
-    col1, col2 = st.columns([1, 4])  # Adjust the column width ratio as needed
 
-    with col1:
-        st.image(logo, width=100)  # Adjust the width as needed
-
-    with col2:
         st.title("Hybrid PONV Machine Learning Algorithm")
 except FileNotFoundError:
     st.title("Hybrid PONV Machine Learning Algorithm ")
