@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -13,12 +12,7 @@ from sklearn.datasets import make_classification
 
 st.set_page_config(layout="wide")
 
-
-        st.title("Hybrid PONV Machine Learning Algorithm")
-except FileNotFoundError:
-    st.title("Hybrid PONV Machine Learning Algorithm ")
-    st.error("Logo file 'mkcg_logo.png' not found. Please place it in the same directory as the script.")
-
+st.title("Hybrid PONV Machine Learning Algorithm [Beta 2.0]")
 st.markdown("Dr. Nabyendu Biswas, Department of Pharmacology, MKCG Medical College and Hospital")
 
 st.markdown(
